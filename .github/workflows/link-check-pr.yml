@@ -24,7 +24,7 @@ jobs:
 
       - name: Run Lychee on changed files
         if: steps.changed-files.outputs.any_changed == 'true'
-        uses: lycheeverse/lychee-action@v1.9.3
+        uses: lycheeverse/lychee-action@v2
         with:
           # Only pass the exact files that changed
           args: --config lychee.toml --verbose --no-progress ${{ steps.changed-files.outputs.all_changed_files }}

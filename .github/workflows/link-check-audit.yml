@@ -17,7 +17,7 @@ jobs:
 
       - name: Run Lychee Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@v1.9.3
+        uses: lycheeverse/lychee-action@v2
         with:
           args: --config lychee.toml --verbose --no-progress "frontend/public/content/**/*.md"
           fail: false # Do not fail the workflow on the scheduled run
